@@ -15,34 +15,34 @@ Some useful links:
  * OpenAPI spec version: 1.0.11
  */
 
+export * from "./address";
+export * from "./apiResponse";
 export * from "./cat";
 export * from "./catType";
+export * from "./category";
 export * from "./createPetsBodyItem";
+export * from "./customer";
 export * from "./dachshund";
 export * from "./dachshundBreed";
 export * from "./dog";
 export * from "./dogType";
 export * from "./error";
-export * from "./labradoodle";
-export * from "./labradoodleBreed";
-export * from "./listPetsParams";
-export * from "./pet";
-export * from "./petCallingCode";
-export * from "./petCountry";
-export * from "./pets";
-export * from "./address";
-export * from "./apiResponse";
-export * from "./category";
-export * from "./customer";
 export * from "./findPetsByStatusParams";
 export * from "./findPetsByStatusStatus";
 export * from "./findPetsByTagsParams";
 export * from "./getInventory200";
+export * from "./labradoodle";
+export * from "./labradoodleBreed";
+export * from "./listPetsParams";
 export * from "./loginUserParams";
 export * from "./order";
 export * from "./orderStatus";
+export * from "./pet";
 export * from "./petBody";
+export * from "./petCallingCode";
+export * from "./petCountry";
 export * from "./petStatus";
+export * from "./pets";
 export * from "./tag";
 export * from "./updatePetWithFormParams";
 export * from "./uploadFileParams";
