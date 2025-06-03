@@ -5,7 +5,7 @@
 Refer [Makefile](./Makefile) for actual steps
 
 - run `make generate-using-bun` -> fails
-- run `generate-using-npm` -> works
+- run `generate-using-npm` -> works (tested with node v20.18.0)
 
 ## Observed Error in Case of Bun
 
