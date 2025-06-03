@@ -1,3 +1,4 @@
+# taken from https://editor.swagger.io/
 openapi: 3.0.3
 info:
   title: Swagger Petstore - OpenAPI 3.0
