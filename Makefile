@@ -9,13 +9,13 @@ generate-using-npm: clean
 	npm install
 	npx orval
 
-generate-diff: clean
-	make generate-using-npm
-	rm -rf npm
+generate-diff: 
+	rm -rf node_modules npm bun
 	mkdir npm
-	mv node_modules npm/
-	make generate-using-bun ||:
-	rm -rf bun
 	mkdir bun
+	npm install
+	mv node_modules npm/
+	rm -rf node_modules
+	bun install
 	mv node_modules bun/
 	diff -r npm/node_modules bun/node_modules > node_modules.diff ||:
