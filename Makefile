@@ -5,6 +5,11 @@ generate-using-bun: clean
 	bun install
 	bunx --bun orval
 
+generate-using-bun-without-bun-lock: clean
+	rm bun.lock
+	bun install
+	bunx --bun orval
+
 generate-using-npm: clean
 	npm install
 	npx orval
