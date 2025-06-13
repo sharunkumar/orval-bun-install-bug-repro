@@ -1,5 +1,5 @@
 clean:
-	rm -rf node_modules npm bun
+	rm -rf node_modules npm bun ~/.bun/install/cache
 
 generate-using-bun: clean
 	bun install
