@@ -1,5 +1,5 @@
 clean:
-	rm -rf node_modules
+	rm -rf node_modules npm bun
 
 generate-using-bun: clean
 	bun install
@@ -9,8 +9,7 @@ generate-using-npm: clean
 	npm install
 	npx orval
 
-generate-diff: 
-	rm -rf node_modules npm bun
+generate-diff: clean
 	mkdir npm
 	mkdir bun
 	npm install
