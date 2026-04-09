@@ -1,0 +1,8 @@
+{
+  "name": "shared-config",
+  "version": "1.0.0",
+  "description": "Simulates an internal shared config package that depends on eslint-formatter-compact",
+  "dependencies": {
+    "eslint-formatter-compact": "8.40.0"
+  }
+}

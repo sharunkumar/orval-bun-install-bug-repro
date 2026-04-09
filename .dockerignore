@@ -1,0 +1,6 @@
+node_modules
+npm
+bun
+dist
+src/gen
+.git

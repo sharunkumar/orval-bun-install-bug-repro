@@ -13,7 +13,8 @@
   "dependencies": {
     "@tanstack/react-query": "5.80.7",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "shared-config": "file:packages/shared-config"
   },
   "devDependencies": {
     "@types/react": "19.1.8",
