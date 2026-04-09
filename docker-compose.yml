@@ -1,0 +1,24 @@
+services:
+  lint-bun:
+    build:
+      context: .
+      dockerfile: Dockerfile.bun
+    command: sh -c "bun install && bunx eslint --format compact src/"
+
+  lint-npm:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    command: sh -c "npm install && npx eslint --format compact src/"
+
+  generate-bun:
+    build:
+      context: .
+      dockerfile: Dockerfile.bun
+    command: sh -c "bun install && bunx --bun orval"
+
+  generate-npm:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    command: sh -c "npm install && npx orval"
